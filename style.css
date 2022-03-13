@@ -1,0 +1,119 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-weight: 800;
+  background-color: #1f2632;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  background-color: #323a49;
+  border-radius: 20px;
+  height: 330px;
+  width: 540px;
+  padding: 50px;
+  padding-bottom: 75px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-bottom: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 64rem) {
+  .card {
+    width: 345px;
+    height: auto;
+    min-height: 315px;
+  }
+}
+
+.card_adviceTitle {
+  color: #52ffa8;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+
+.card_adviceContent {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.card_adviceDivider {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  position: absolute;
+  bottom: 70px;
+}
+
+@media (max-width: 64rem) {
+  .card_adviceDivider img {
+    content: url(pattern-divider-mobile.svg);
+    margin: auto;
+    position: absolute;
+    left: -23px;
+  }
+}
+
+.card_adviceDice {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background-image: url(icon-dice.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #52ffa8;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
+  -webkit-transition: scale 200ms ease-in-out;
+  transition: scale 200ms ease-in-out;
+}
+
+.card_adviceDice:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 60px 16px rgba(82, 255, 168, 0.4);
+          box-shadow: 0px 0px 60px 16px rgba(82, 255, 168, 0.4);
+}
+
+.card_adviceDice:active {
+  scale: 1.1;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+/*# sourceMappingURL=style.css.map */
