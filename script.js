@@ -8,6 +8,7 @@ window.onload = () =>{
 }
 resBtn.addEventListener('click', () =>{
     getAdvice(); 
+    console.log('clicked !');
 })
 
 function getAdvice(){
@@ -17,6 +18,7 @@ function getAdvice(){
         const adviceObj = adviceData.slip;
         resDiv.innerHTML = `<p>${adviceObj.advice}</p>`;
         resTitle.innerHTML = `ADVICE #${adviceObj.id}`;
+        console.log(adviceObj.advice);
     }).catch(error =>{
         console.log(error);
     })
